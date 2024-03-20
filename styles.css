@@ -1,0 +1,151 @@
+body {
+    font-family: 'Libre Franklin';
+    background-color: #f2f2f2;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 3em 0;
+}
+
+
+h1 {
+    font-size: clamp(1.375rem, 0.8028rem + 2.4413vw, 3rem);
+    color: #969696;
+    font-weight: lighter;
+    margin-bottom: 0;
+
+}
+
+h1 span {
+    color: #15202A;
+    font-weight: bold;
+}
+
+main p {
+    color: #15202A;
+    font-size: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+    font-weight: lighter;
+
+}
+
+.hero h1,
+.hero p,
+header {
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.email-input {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    padding-left: 1em;
+
+
+}
+
+input {
+    border-radius: 25px;
+    border: 1px solid #B8C7ED;
+    padding: 1rem 2rem;
+}
+
+::placeholder {
+    color: #B8C7ED;
+}
+
+.notify {
+    background-color: #4C7BF3;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(0px 1px black);
+
+
+}
+
+.chart-image img {
+    width: 100%;
+    max-width: 640px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    
+}
+
+.fa-brands {
+    color: #4C7BF3;
+}
+
+.copyright {
+    color: #9B9B9B;
+}
+
+/* @media only screen and (max-width:768px){
+    .email-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+}*/
+
+@media only screen and (max-width: 479px) {
+  body{
+    padding:0 ;
+  }
+   .error{
+    font-size: 10px;
+   }
+    .email-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        margin-top: 1em;
+       
+    }
+ input, .notify{
+    padding: 1em 1em
+ }
+  
+    .notify {
+        font-size: 12px;
+    }
+
+}
